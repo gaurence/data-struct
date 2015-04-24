@@ -8,7 +8,7 @@ list
 create_list()
 {
 	list L;
-	L = (ptr_l_node)malloc(sizeof(struct l_node));
+	L = malloc(sizeof(struct l_node));
 	L->next = NULL;
 
 	return L;
@@ -83,7 +83,7 @@ insert(data_type X, position P)
 {
 	position Q;
 
-	Q = (ptr_l_node)malloc(sizeof(struct l_node));
+	Q = malloc(sizeof(struct l_node));
 	if (Q == NULL)
 		fatal_error("Out of space!");
 	else {
